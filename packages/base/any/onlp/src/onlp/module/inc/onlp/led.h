@@ -31,43 +31,42 @@
 /* <auto.start.enum(tag:led).define> */
 /** onlp_led_caps */
 typedef enum onlp_led_caps_e {
-    ONLP_LED_CAPS_ON_OFF = (1 << 0),
-    ONLP_LED_CAPS_CHAR = (1 << 1),
-    ONLP_LED_CAPS_RED = (1 << 10),
-    ONLP_LED_CAPS_RED_BLINKING = (1 << 11),
-    ONLP_LED_CAPS_ORANGE = (1 << 12),
-    ONLP_LED_CAPS_ORANGE_BLINKING = (1 << 13),
-    ONLP_LED_CAPS_YELLOW = (1 << 14),
-    ONLP_LED_CAPS_YELLOW_BLINKING = (1 << 15),
-    ONLP_LED_CAPS_GREEN = (1 << 16),
-    ONLP_LED_CAPS_GREEN_BLINKING = (1 << 17),
-    ONLP_LED_CAPS_BLUE = (1 << 18),
-    ONLP_LED_CAPS_BLUE_BLINKING = (1 << 19),
-    ONLP_LED_CAPS_PURPLE = (1 << 20),
-    ONLP_LED_CAPS_PURPLE_BLINKING = (1 << 21),
-    ONLP_LED_CAPS_AUTO = (1 << 22),
-    ONLP_LED_CAPS_AUTO_BLINKING = (1 << 23),
+    ONLP_LED_CAPS_ON_OFF = (1 << 0),           // 1
+    ONLP_LED_CAPS_CHAR = (1 << 1),             // 2
+    ONLP_LED_CAPS_RED = (1 << 2),               // 4
+    ONLP_LED_CAPS_RED_BLINKING = (1 << 3),     // 8
+    ONLP_LED_CAPS_ORANGE = (1 << 4),            // 16
+    ONLP_LED_CAPS_ORANGE_BLINKING = (1 << 5),  // 32
+    ONLP_LED_CAPS_YELLOW = (1 << 6),            // 64
+    ONLP_LED_CAPS_YELLOW_BLINKING = (1 << 7),   // 128
+    ONLP_LED_CAPS_GREEN = (1 << 8),             // 256
+    ONLP_LED_CAPS_GREEN_BLINKING = (1 << 9),    // 512
+    ONLP_LED_CAPS_BLUE = (1 << 10),             // 1024
+    ONLP_LED_CAPS_BLUE_BLINKING = (1 << 11),    // 2048
+    ONLP_LED_CAPS_PURPLE = (1 << 12),           // 4096
+    ONLP_LED_CAPS_PURPLE_BLINKING = (1 << 13),  // 8192
+    ONLP_LED_CAPS_AUTO = (1 << 14),             // 16384
+    ONLP_LED_CAPS_AUTO_BLINKING = (1 << 15),    // 32768
 } onlp_led_caps_t;
 
-/** onlp_led_mode */
 typedef enum onlp_led_mode_e {
-    ONLP_LED_MODE_OFF,
-    ONLP_LED_MODE_ON,
-    ONLP_LED_MODE_BLINKING,
-    ONLP_LED_MODE_RED = 10,
-    ONLP_LED_MODE_RED_BLINKING = 11,
-    ONLP_LED_MODE_ORANGE = 12,
-    ONLP_LED_MODE_ORANGE_BLINKING = 13,
-    ONLP_LED_MODE_YELLOW = 14,
-    ONLP_LED_MODE_YELLOW_BLINKING = 15,
-    ONLP_LED_MODE_GREEN = 16,
-    ONLP_LED_MODE_GREEN_BLINKING = 17,
-    ONLP_LED_MODE_BLUE = 18,
-    ONLP_LED_MODE_BLUE_BLINKING = 19,
-    ONLP_LED_MODE_PURPLE = 20,
-    ONLP_LED_MODE_PURPLE_BLINKING = 21,
-    ONLP_LED_MODE_AUTO = 22,
-    ONLP_LED_MODE_AUTO_BLINKING = 23,
+    ONLP_LED_MODE_OFF = 0,                       // 0
+    ONLP_LED_MODE_ON = 1,                        // 1
+    ONLP_LED_MODE_BLINKING = 2,                  // 2
+    ONLP_LED_MODE_RED = 3,                       // 3
+    ONLP_LED_MODE_RED_BLINKING = 4,              // 4
+    ONLP_LED_MODE_ORANGE = 5,                    // 5
+    ONLP_LED_MODE_ORANGE_BLINKING = 6,           // 6
+    ONLP_LED_MODE_YELLOW = 7,                    // 7
+    ONLP_LED_MODE_YELLOW_BLINKING = 8,           // 8
+    ONLP_LED_MODE_GREEN = 9,                     // 9
+    ONLP_LED_MODE_GREEN_BLINKING = 10,           // 10
+    ONLP_LED_MODE_BLUE = 11,                     // 11
+    ONLP_LED_MODE_BLUE_BLINKING = 12,            // 12
+    ONLP_LED_MODE_PURPLE = 13,                   // 13
+    ONLP_LED_MODE_PURPLE_BLINKING = 14,          // 14
+    ONLP_LED_MODE_AUTO = 15,                     // 15
+    ONLP_LED_MODE_AUTO_BLINKING = 16,            // 16
 } onlp_led_mode_t;
 
 /** onlp_led_status */
